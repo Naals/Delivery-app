@@ -1,0 +1,8 @@
+spring:
+  application:
+   name: order-service
+  datasource:
+    url: jdbc:postgresql://localhost:5433/orders
+    username: asik
+    password: asik
+    driver-class-name: org.postgresql.Driver

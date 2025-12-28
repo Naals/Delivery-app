@@ -1,0 +1,21 @@
+services:
+  postgres:
+    container_name: da_pg_sql
+    image: postgres:16
+    restart: unless-stopped
+    ports:
+      - 5433:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: asik
+      POSTGRES_PASSWORD: asik
+      POSTGRES_DB: orders
+    healthcheck:
+      test: pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB
+      interval: 10s
+      timeout: 5s
+      start_period: 10s
+      retries: 5
+volumes:
+  postgres_data:
