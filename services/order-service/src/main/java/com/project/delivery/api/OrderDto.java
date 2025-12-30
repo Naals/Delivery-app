@@ -11,6 +11,7 @@ public record OrderDto(
         String address,
         BigDecimal totalAmount,
         String courierName,
+        Integer etaMinutes,
         OrderStatus status,
         Set<OrderItemDto> orderItemEntities
 ) {

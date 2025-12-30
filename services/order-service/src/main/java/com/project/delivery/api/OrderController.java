@@ -2,7 +2,6 @@ package com.project.delivery.api;
 
 
 import com.project.delivery.domain.OrderProcessor;
-import com.project.delivery.domain.db.OrderEntity;
 import com.project.delivery.domain.db.OrderEntityMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -19,7 +18,7 @@ public class OrderController {
 
     @PostMapping
     public OrderDto create(
-            @RequestBody OrderEntity request
+            @RequestBody CreateOrderRequestDto request
     ) {
         log.info("Creating order: request={}", request);
         var saved = orderProcessor.create(request);

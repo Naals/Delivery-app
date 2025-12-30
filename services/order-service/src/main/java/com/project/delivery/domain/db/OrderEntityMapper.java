@@ -1,5 +1,6 @@
 package com.project.delivery.domain.db;
 
+import com.project.delivery.api.CreateOrderRequestDto;
 import com.project.delivery.api.OrderDto;
 import org.mapstruct.*;
 
@@ -9,7 +10,7 @@ import org.mapstruct.*;
 )
 public interface OrderEntityMapper {
 
-    OrderEntity toEntity(OrderDto requestDto);
+    OrderEntity toEntity(CreateOrderRequestDto requestDto);
 
     @AfterMapping
     default void linkOrderItemEntities(@MappingTarget OrderEntity orderEntity) {
