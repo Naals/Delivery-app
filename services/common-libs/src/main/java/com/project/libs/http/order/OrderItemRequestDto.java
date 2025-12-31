@@ -1,4 +1,4 @@
-package com.project.delivery.api;
+package com.project.libs.http.order;
 
 public record OrderItemRequestDto(
         Long itemId,

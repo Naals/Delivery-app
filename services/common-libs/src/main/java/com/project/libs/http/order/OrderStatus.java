@@ -1,4 +1,4 @@
-package com.project.delivery.domain.db;
+package com.project.libs.http.order;
 
 public enum OrderStatus {
     PENDING_PAYMENT,

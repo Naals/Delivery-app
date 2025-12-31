@@ -1,6 +1,8 @@
 package com.project.delivery.domain.db;
 
 
+import com.project.libs.http.payment.PaymentMethod;
+import com.project.libs.http.payment.PaymentStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

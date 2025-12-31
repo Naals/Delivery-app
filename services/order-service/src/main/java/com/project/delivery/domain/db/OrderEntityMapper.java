@@ -1,7 +1,6 @@
 package com.project.delivery.domain.db;
 
-import com.project.delivery.api.CreateOrderRequestDto;
-import com.project.delivery.api.OrderDto;
+import com.project.libs.http.order.*;
 import org.mapstruct.*;
 
 @Mapper(

@@ -1,7 +1,6 @@
 package com.project.delivery.domain.db;
 
-import com.project.delivery.api.CreatePaymentRequestDto;
-import com.project.delivery.api.CreatePaymentResponseDto;
+import com.project.libs.http.payment.*;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingConstants;

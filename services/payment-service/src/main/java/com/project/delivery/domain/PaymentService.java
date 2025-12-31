@@ -1,11 +1,9 @@
 package com.project.delivery.domain;
 
-import com.project.delivery.api.CreatePaymentRequestDto;
-import com.project.delivery.api.CreatePaymentResponseDto;
 import com.project.delivery.domain.db.PaymentEntityMapper;
 import com.project.delivery.domain.db.PaymentEntityRepository;
-import com.project.delivery.domain.db.PaymentMethod;
-import com.project.delivery.domain.db.PaymentStatus;
+import com.project.libs.http.payment.*;
+
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

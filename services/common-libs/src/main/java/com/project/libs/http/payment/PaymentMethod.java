@@ -1,4 +1,4 @@
-package com.project.delivery.domain.db;
+package com.project.libs.http.payment;
 
 public enum PaymentMethod {
     CARD,

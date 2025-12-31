@@ -1,7 +1,4 @@
-package com.project.delivery.api;
-
-import com.project.delivery.domain.db.PaymentMethod;
-import com.project.delivery.domain.db.PaymentStatus;
+package com.project.libs.http.payment;
 
 import java.math.BigDecimal;
 

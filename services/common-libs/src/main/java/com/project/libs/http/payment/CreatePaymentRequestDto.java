@@ -1,6 +1,6 @@
-package com.project.delivery.api;
+package com.project.libs.http.payment;
 
-import com.project.delivery.domain.db.PaymentMethod;
+
 import lombok.Builder;
 
 import java.math.BigDecimal;

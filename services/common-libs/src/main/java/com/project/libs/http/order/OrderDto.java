@@ -1,6 +1,4 @@
-package com.project.delivery.api;
-
-import com.project.delivery.domain.db.OrderStatus;
+package com.project.libs.http.order;
 
 import java.math.BigDecimal;
 import java.util.Set;

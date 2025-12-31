@@ -1,5 +1,6 @@
 package com.project.delivery.domain.db;
 
+import com.project.libs.http.order.OrderStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
