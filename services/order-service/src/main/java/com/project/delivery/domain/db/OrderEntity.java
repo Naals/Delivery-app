@@ -23,7 +23,7 @@ public class OrderEntity {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "customerId")
+    @Column(name = "customer_id")
     private Long customerId;
 
     @Column(name = "address")
