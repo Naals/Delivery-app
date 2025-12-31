@@ -12,7 +12,7 @@ public record OrderDto(
         BigDecimal totalAmount,
         String courierName,
         Integer etaMinutes,
-        OrderStatus status,
-        Set<OrderItemDto> orderItemEntities
+        OrderStatus orderStatus,
+        Set<OrderItemDto> items
 ) {
 }

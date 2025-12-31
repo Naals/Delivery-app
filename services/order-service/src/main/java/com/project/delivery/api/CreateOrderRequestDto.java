@@ -5,6 +5,6 @@ import java.util.Set;
 public record CreateOrderRequestDto(
         Long customerId,
         String address,
-        Set<OrderItemRequestDto> orderItemEntities
+        Set<OrderItemRequestDto> items
 ) {
 }
