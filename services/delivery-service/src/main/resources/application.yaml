@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: asik
+    username: asik
+    url: jdbc:postgresql://localhost:5433/orders
+  application:
+    name: delivery-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+  kafka:
+    consumer:
+      group-id: delivery-service-group
+    bootstrap-servers: localhost:9092
+server:
+  port: 8080
+
+payment-service:
+  base-url: http://localhost:8081
+
+order-paid-topic: orders.events
+delivery-assigned-topic: delivery.events
