@@ -43,7 +43,7 @@ public class KafkaConfiguration {
         Map<String, Object> props = kafkaProperties.buildConsumerProperties(null);
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, LongDeserializer.class);
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
-        props.put(JsonDeserializer.TRUSTED_PACKAGES, "com.project.delivery.kafka");
+        props.put(JsonDeserializer.TRUSTED_PACKAGES, "com.project.libs.kafka");
         return new DefaultKafkaConsumerFactory<>(props);
     }
 
