@@ -111,7 +111,7 @@ public class OrderProcessor {
         order.setOrderStatus(OrderStatus.DELIVERY_ASSIGNED);
         order.setCourierName(event.courierName());
         order.setEtaMinutes(event.etaMinutes());
-        repository.save(order);
+        repository.save(order); //error was in pg
         log.info("Order delivery assigned processed: orderId={}", order.getId());
     }
 
